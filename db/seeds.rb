@@ -9,4 +9,7 @@
         Post.create(title:"test title#{post}",body: "this is atest body #{post}")
         puts "number of #{post}were created"
     end
-
+    (1..100).each do |user|
+        User.create(name:"name#{user}",email: "email#{user}@gmail.com",password:"password#{user}",password_confirmation: "password#{user}")
+        puts "number of #{user}were created"
+    end
