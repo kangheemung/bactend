@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def create
     @user = User.new(users_params)
-
         if @user.save
             login!
             render json: { status: :created, user: @user }
