@@ -5,11 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-    (1..100).each do |post|
-        Post.create(title:"test title#{post}",body: "this is atest body #{post}")
+    (1..10).each do |post|
+        Post.create(title:"test title#{post}",body: "this is atest body #{post}",user_id:"#{post}")
         puts "number of #{post}were created"
     end
-    (1..100).each do |user|
+    (1..10).each do |user|
         User.create(name:"name#{user}",email: "email#{user}@gmail.com",password:"password#{user}",password_confirmation: "password#{user}")
         puts "number of #{user}were created"
     end
