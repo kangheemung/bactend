@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   post '/login'=>'sessions#login'
   delete '/logout'=>'sessions#logout'
-  get '/logged_in?'=> 'sessions#logged_in?'
+  get '/logged_in'=> 'sessions#logged_in?'
   post '/signup'=>'users#create'
   get 'users/edit'=>'users#edit'
   get 'users/show'=>'users#show'
